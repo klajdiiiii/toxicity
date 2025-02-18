@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const text = input.value;
         
-        const response = await fetch("https://toxicity-1er2.onrender.com/analyze", {
+        const response = await fetch("https://toxicity-1er2.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text })
